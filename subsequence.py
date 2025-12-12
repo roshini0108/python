@@ -8,6 +8,7 @@
     PrintSbsq(s,i+1,res)
 print("subsequence")
 PrintSbsq("suji",0,"")"""
+#longest common subsequence
 # longest common subsequence
 class Python: 
     def __init__(self):
@@ -28,4 +29,4 @@ class Python:
 
 p = Python()  
 print("Longest Common Subsequence:")
-print(p.lcs("kavya", "kavitha", 0, 0))
+print(p.lcs("suji", "sujit", 0, 0))
