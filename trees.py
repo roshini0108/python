@@ -15,14 +15,16 @@ def levelorder(root):
     queue=[]
     queue.append(root)
     while(len(queue)!=0):
-        curr=queue.pop(0)
-        print(curr.value)
-        if curr.left!=None:
-            queue.append(curr.left)
-        if curr.right!=None:
-            queue.append(curr.right)
-        res.append(curr.value)
-    print(res)
+        count= len(queue)
+        a=[]
+        for _ in range(count):
+            curr=queue.pop(0)
+            if curr.left!=None:
+                queue.append(curr.left)
+            if curr.right!=None:
+                queue.append(curr.right)
+            a.append(curr.value)
+        print(a)
 root=node('a')
 root.left=node('b')
 root.right=node('c')
@@ -32,4 +34,3 @@ root.right.left=node('f')
 root.right.right=node('g')
 print("Tree Traversal:")
 levelorder(root)
-preorder(root)  
