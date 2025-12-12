@@ -6,4 +6,5 @@ def PrintSbsq(s,i,res):
     PrintSbsq(s,i+1,res+s[i])
     # exclude the character at index i
     PrintSbsq(s,i+1,res)
-    print("subsequence")
+print("subsequence")
+PrintSbsq("suji",0,"")
